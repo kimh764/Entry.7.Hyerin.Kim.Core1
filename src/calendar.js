@@ -71,7 +71,7 @@ function makeCalendar(year,mon,dayCount){
    
     for(let i=1; i<=dayCount; i++){
         if(i===currentDay&&year===currentYear&&mon===currentMon){
-            //선택한 년, 월, 일 다를 때 현재 날짜에 검은색 테두리
+            //choses date
             const onlyOneList = document.createElement('li');
 
             onlyOneList.textContent = `${i}`;
@@ -89,7 +89,7 @@ function makeCalendar(year,mon,dayCount){
                 onlyOneList.style.color = 'gray';
             }
 
-            //현재 년, 월 같을 때
+            //now year
             
             Day.addEventListener('click',(event)=>{
                 if(event.target!==onlyOneList){
